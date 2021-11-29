@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".BMI_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="60dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="BMI Calculator"
+                    android:textColor="#0B0A0A"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Weight"
+                    android:textColor="#090909"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edweg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/backgroundeditview"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Kg"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Height"
+                    android:textColor="#090909"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edhei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/backgroundeditview"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="cm"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:padding="8dp" />
+
+                <Button
+                    android:id="@+id/btnres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_gradient"
+                    android:text="Result"
+                    android:textColor="#FAF7F7"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:hint="BMI = ?"
+                    android:padding="5dp"
+                    android:textColor="#070707"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnFit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_gradient"
+                    android:text="Fitness detail"
+                    android:textColor="#FAF7F7"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_gradient"
+                    android:text="Reset"
+                    android:textColor="#FAF7F7"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
